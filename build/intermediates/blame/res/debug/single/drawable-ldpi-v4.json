@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\BluetoothDemo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_launcher.png",
+        "source": "E:\\BluetoothDemo\\res\\drawable-ldpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\BluetoothDemo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_action_discover.png",
+        "source": "E:\\BluetoothDemo\\res\\drawable-ldpi\\ic_action_discover.png"
+    },
+    {
+        "merged": "E:\\BluetoothDemo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\details_view.xml",
+        "source": "E:\\BluetoothDemo\\res\\drawable-ldpi\\details_view.xml"
+    },
+    {
+        "merged": "E:\\BluetoothDemo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\section_header.xml",
+        "source": "E:\\BluetoothDemo\\res\\drawable-ldpi\\section_header.xml"
+    },
+    {
+        "merged": "E:\\BluetoothDemo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_action_on_off.png",
+        "source": "E:\\BluetoothDemo\\res\\drawable-ldpi\\ic_action_on_off.png"
+    }
+]
