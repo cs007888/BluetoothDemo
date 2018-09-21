@@ -1,4 +1,4 @@
-# BluetoothDemo
+# filetransfer_android
 android app
 my first android project
 it has two problems
