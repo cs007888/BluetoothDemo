@@ -13,7 +13,7 @@
         android:orientation="vertical"
         android:weightSum="1">
         <fragment
-            class="com.isoftstone.bluetooth.p2p.DeviceListFragment"
+            class="com.example.transfer.p2p.DeviceListFragment"
             android:id="@+id/frag_list"
             android:layout_width="match_parent"
             android:layout_height="@dimen/phone_list_height"
@@ -21,7 +21,7 @@
             <!-- Preview: layout=@layout/row_devices -->
         </fragment>
         <fragment
-            class="com.isoftstone.bluetooth.p2p.DeviceDetailFragment"
+            class="com.example.transfer.p2p.DeviceDetailFragment"
             android:id="@+id/frag_detail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

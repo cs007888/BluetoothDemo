@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.isoftstone.bluetooth">
+    package="com.example.transfer">
 
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -50,8 +50,6 @@
             android:name=".activity.SecondActivity"
             android:theme="@style/AppTheme.NoActionBar" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
-        <meta-data
-            android:name="com.google.android.gms.version" />
     </application>
 
 </manifest>
