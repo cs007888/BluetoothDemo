@@ -3,18 +3,12 @@ package com.isoftstone.bluetooth.activity;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.BounceInterpolator;
-import android.widget.Button;
 import android.widget.ImageView;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
 import com.isoftstone.bluetooth.R;
 import com.isoftstone.bluetooth.p2p.WifiDirectActivity;
 
@@ -26,53 +20,52 @@ public class SecondActivity extends Activity {
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
-    private GoogleApiClient client;
 
         ArrayList<View> views = new ArrayList<View>();
         ImageView v_start, v_ly, v_wf;
         boolean isclose = true;
 
-        @Override
-        protected void onCreate (Bundle savedInstanceState){
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_second);
-             v_start = (ImageView) findViewById(R.id.btn_start);
-             v_wf = (ImageView) findViewById(R.id.wf);
-             v_ly = (ImageView) findViewById(R.id.ly);
-             v_wf.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(SecondActivity.this, WifiDirectActivity.class);
-                    startActivity(intent);
+    @Override
+    protected void onCreate (Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_second);
+         v_start = (ImageView) findViewById(R.id.btn_start);
+         v_wf = (ImageView) findViewById(R.id.wf);
+         v_ly = (ImageView) findViewById(R.id.ly);
+         v_wf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SecondActivity.this, WifiDirectActivity.class);
+                startActivity(intent);
+            }
+        });
+        v_ly.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SecondActivity.this, BluetoothActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        views.add(v_start);
+        views.add(v_wf);
+        views.add(v_ly);
+
+
+        v_start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isclose) {
+                    star();
+                } else {
+                    close();
                 }
-            });
-            v_ly.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(SecondActivity.this, BluetoothActivity.class);
-                    startActivity(intent);
-                }
-            });
+            }
+        });
 
-
-
-            views.add(v_start);
-            views.add(v_wf);
-            views.add(v_ly);
-
-
-            v_start.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (isclose) {
-                        star();
-                    } else {
-                        close();
-                    }
-                }
-            });
-
-        }
+    }
 
 
     private void star() {

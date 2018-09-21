@@ -1,7 +1,5 @@
 package com.isoftstone.bluetooth.activity;
 
-import java.io.File;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -11,7 +9,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -25,8 +22,10 @@ import android.widget.Toast;
 import com.isoftstone.bluetooth.BluetoothApplication;
 import com.isoftstone.bluetooth.R;
 import com.isoftstone.bluetooth.adapter.AdapterManager;
-import com.isoftstone.bluetooth.p2p.DeviceDetailFragment;
 import com.isoftstone.bluetooth.entity.Copy_File;
+import com.isoftstone.bluetooth.p2p.DeviceDetailFragment;
+
+import java.io.File;
 
 public class SelectFileActivity extends Activity {
 
